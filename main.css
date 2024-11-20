@@ -189,6 +189,13 @@ header {
 }
 
 @media (max-width: 50rem) {
+    html {
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100vw;
+    }
     .desktop_menu {
         display: none !important;
     }
@@ -394,8 +401,15 @@ header {
 @media (max-width: 50rem) {
 
     .hero_section {
-        height: 56rem;
+        margin-top: 400px;
+        height: auto;
         align-items: flex-end;
+
+        & .btns_container {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            justify-content: flex-start;
+        }
 
         &>.container_section {
             height: 37.5rem;
@@ -412,7 +426,7 @@ header {
                 width: 95%;
                 margin-right: 0;
                 padding-bottom: 0;
-                margin-top: 3.125rem;
+                margin-top: 5rem;
 
                 & h1 {
                     width: 100%;
@@ -431,7 +445,7 @@ header {
                     position: absolute;
                     z-index: 3;
                     right: 25%;
-                    top: -10rem;
+                    top: -14rem;
                     height: 18.75rem;
                     animation: floating_shake 10s ease-in-out infinite;
                 }
@@ -528,7 +542,8 @@ header {
     }
 
     &>.message {
-        width: 28.125rem;
+        width: 90%;
+        max-width: 28.125rem;
         display: flex;
         flex-direction: column;
         gap: 0.625rem;
@@ -822,19 +837,23 @@ header {
 }
 
 @media (max-width: 50rem) {
-    .img_cell_mao {
-        display: none;
-    }
-
     .sobre_section {
-        height: 35rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-
+    
         &>.container_section {
             margin-left: 0;
+            width: 95%;
+    
+            &>h2 {
+                font-size: 2rem;
+            }
+    
+            &>.container_items {
+                gap: 0;
+            }
+        }
+    
+        &>.img_cell_mao {
+            display: none;
         }
     }
 }
