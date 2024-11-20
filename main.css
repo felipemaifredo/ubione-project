@@ -23,6 +23,18 @@
     box-sizing: border-box;
 }
 
+.init_hidden {
+    transform: translate(-50%);
+    transition: transform 1s;
+    opacity: 0;
+}
+
+.init_hidden_off {
+    opacity: 1;
+    transform: translate(0%);
+    transition: transform .8s
+}
+
 .tt_Interphases_regular {
     font-family: "TT Interphases Pro Regular", sans-serif;
 }
@@ -196,6 +208,7 @@ header {
     header {
         width: 100vw;
     }
+
     .desktop_menu {
         display: none !important;
     }
@@ -548,6 +561,7 @@ header {
         flex-direction: column;
         gap: 0.625rem;
 
+
         &>p {
             text-align: end;
             margin-right: 6.25rem;
@@ -838,20 +852,20 @@ header {
 
 @media (max-width: 50rem) {
     .sobre_section {
-    
+
         &>.container_section {
             margin-left: 0;
             width: 95%;
-    
+
             &>h2 {
                 font-size: 2rem;
             }
-    
+
             &>.container_items {
                 gap: 0;
             }
         }
-    
+
         &>.img_cell_mao {
             display: none;
         }
@@ -899,6 +913,13 @@ header {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+            transition: all .3s;
+
+            &:hover {
+                margin: 0px 20px;
+                transform: scale(1.05);
+            }
+
 
             & .title {
                 color: #1b95af;
@@ -1091,6 +1112,7 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
+                    transition: all .3s;
 
                     gap: 20px;
                     background-color: #fff;
@@ -1098,6 +1120,10 @@ header {
 
                     &>img {
                         width: 75px;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
                     }
                 }
             }

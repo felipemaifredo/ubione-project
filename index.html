@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <title>ubiOne - Seu chatbot inteligente</title>
+    <script src="/scritps.js" defer></script>
+    <title>UbiOne - Seu chatbot inteligente</title>
     <meta name="description" content="Conheça o ubiOne, seu chatbot inteligente e personalizado. Simplifique atendimentos, otimize processos e ofereça uma experiência única aos seus clientes, 24/7.">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
-
 <body>
     <header>
         <nav>
@@ -22,11 +21,11 @@
                     <img src="./images/logo.webp" alt="Logo UbiOne" />
                 </a>
                 <ul>
-                    <li> <a href="#">Soluções</a> </li>
-                    <li> <a href="#">Plataforma</a> </li>
-                    <li> <a href="#">Sobre</a> </li>
-                    <li> <a href="#">Planos</a> </li>
-                    <li> <a href="#">Dúvidas</a> </li>
+                    <li> <a class="btn_scroll" href="#soluctions_section">Soluções</a> </li>
+                    <li> <a class="btn_scroll" href="#plataform_section">Plataforma</a> </li>
+                    <li> <a class="btn_scroll" href="#sobre_section">Sobre</a> </li>
+                    <li> <a class="btn_scroll" href="#prices_section">Planos</a> </li>
+                    <li> <a class="btn_scroll" href="#faq_section">Dúvidas</a> </li>
                 </ul>
                 <a class="contact_link" href="https://wa.me/5528999164470" target="_blank">
                     Teste Grátis
@@ -84,14 +83,14 @@
         <div class="container_section">
             <h2>Um chatbot que <span>te entende!</span></h2>
             <div class="chat_container">
-                <div class="message">
+                <div class="message init_hidden">
                     <p>Julia</p>
                     <div>
                         <p>Eu gostaria de um atendimento personalizado. Poderia me transferir para um atendente?</p>
                         <img src="./images/sec_2_img_3.webp" alt="Simulação de mensagem" />
                     </div>
                 </div>
-                <div class="message message_invert message_2">
+                <div class="message init_hidden message_invert message_2">
                     <p>UbiOne</p>
                     <div>
                         <p>
@@ -102,7 +101,7 @@
                         <img src="./images/sec_2_img_4.webp" alt="Simulação de mensagem" />
                     </div>
                 </div>
-                <div class="message message_invert message_3">
+                <div class="message init_hidden message_invert message_3">
                     <p>Caio</p>
                     <div>
                         <p> Olá, Julia. Como posso te ajudar? </p>
@@ -402,5 +401,4 @@
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 </body>
-
 </html>
