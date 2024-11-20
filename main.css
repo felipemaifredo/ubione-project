@@ -486,6 +486,7 @@ header {
 /* ------------------ */
 
 .soluctions_section {
+    width: 100%;
     height: auto;
     min-height: 90vh;
     background: rgb(138, 199, 211);
@@ -499,9 +500,15 @@ header {
     overflow: hidden;
     padding: 60px 0;
 
+    & > .container_section{
+        margin: 0 auto;
+        width: 95%;
+        max-width: 46.25rem;
+    }
+
     &>div>h2 {
         margin: 0 auto;
-        width: 90%;
+        width: 95%;
         text-align: center;
         font-size: 3.5rem;
         color: #2b1d4a;
