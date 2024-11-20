@@ -486,7 +486,8 @@ header {
 /* ------------------ */
 
 .soluctions_section {
-    height: 90vh;
+    height: auto;
+    min-height: 90vh;
     background: rgb(138, 199, 211);
     background: linear-gradient(0deg, rgba(138, 199, 211, 1) 0%, rgba(251, 197, 163, 1) 100%);
     display: flex;
@@ -496,7 +497,7 @@ header {
     padding-top: 3.125rem;
     position: relative;
     overflow: hidden;
-    padding: 50px;
+    padding: 60px 0;
 
     &>div>h2 {
         margin: 0 auto;
