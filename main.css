@@ -566,6 +566,7 @@ header {
     }
 
     &>.message {
+        height: auto;
         width: 85%;
         max-width: 28.125rem;
         display: flex;
@@ -594,7 +595,8 @@ header {
             &>p {
                 display: inline-block;
                 padding: 0.625rem;
-                height: 6.25rem;
+                height: auto;
+                min-height: 6.25rem;
                 width: calc(28.125rem - 5rem);
                 background-color: #fff;
                 border-radius: 0.625rem 0 0.625rem 0.625rem;
